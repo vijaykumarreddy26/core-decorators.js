@@ -11,7 +11,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "postinstall": "babel --out-dir lib src",
+    "build": "babel --out-dir lib src",
+    "postinstall": "npm run build",
     "build-bower": "babel-node scripts/build-bower.js",
     "test": "npm run build && mocha --compilers js:babel/register --require babel/polyfill \"test/**/*.spec.js\""
   },
