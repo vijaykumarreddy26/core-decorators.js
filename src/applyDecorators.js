@@ -1,7 +1,6 @@
 const { defineProperty, getOwnPropertyDescriptor } = Object;
 
-export default
-function applyDecorators(Class, props) {
+export default function applyDecorators(Class, props) {
   const { prototype } = Class;
   
   for (const key in props) {

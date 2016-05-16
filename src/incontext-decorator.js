@@ -13,7 +13,7 @@ function handleDescriptor(target, key, descriptor, [decorator, ...args]) {
     get() {
       const fn = isGetter ? originalGet.call(this) : originalValue;
       const dec = this[decorator];
-      const value = null;
+      var value = null;
       try{
           value = dec.call(this, fn, ...args);
       }catch(e){
