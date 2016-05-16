@@ -2,7 +2,7 @@
   "name": "core-decorators",
   "version": "0.12.2",
   "description": "Library of ES2016 (ES7) JavaScript decorators inspired by languages that come with built-ins like @​override, @​deprecate, @​autobind, @​mixin and more! Works great with React/Angular/more!",
-  "main": "lib/core-decorators.js",
+  "main": "src/core-decorators.js",
   "jsnext:main": "src/core-decorators.js",
   "files": [
     "lib",
@@ -12,7 +12,6 @@
   ],
   "scripts": {
     "build": "babel --out-dir lib src",
-    "postinstall": "npm run build",
     "build-bower": "babel-node scripts/build-bower.js",
     "test": "npm run build && mocha --compilers js:babel/register --require babel/polyfill \"test/**/*.spec.js\""
   },
